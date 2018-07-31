@@ -19,7 +19,7 @@ export const UPDATE_FAILURE = '[Hero] Update Failure';
 
 export class Get implements Action {
   readonly type = GET;
-  constructor(public payload: string) {}
+  constructor(public payload: number) {}
 }
 
 export class GetSuccess implements Action {
@@ -64,7 +64,7 @@ export class CreateFailure implements Action {
 
 export class Remove implements Action {
   readonly type = REMOVE;
-  constructor(public payload: string) {}
+  constructor(public payload: Hero | number) {}
 }
 
 export class RemoveSuccess implements Action {
